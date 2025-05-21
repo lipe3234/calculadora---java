@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Calculadora{
   public static void main(String[]args){
-    Scanner scanner = newScanner (System.in);
+    Scanner scanner = new Scanner (System.in);
 
-    System.out.println("Digite o primeiro nímero: ");
+    System.out.println("Digite o primeiro numero: ");
     int num1 = scanner.nextInt();
 
     System.out.println("Digite o segundo número; ");
@@ -19,26 +19,27 @@ public class Calculadora{
 
     switch (escolha){
       case 1: 
-        re = num1+ num2;
+        int re = num1+ num2;
         System.out.println("O resultado da soma é igual a: " + re);
-        break();
+        break;
 
       case 2:
-        re = num1 - num2;
-        System.out.println("O resultado da subtração é igual a:  " + re);
-        break();
+        
+        int sub = num1 - num2;
+        System.out.println("O resultado da subtração é igual a:  " + sub);
+        break;
 
       case 3:
-        re = num1 * num2;
-        System.out.println("O resultado da multiplicação é igual a:  " + re);
-        break();
+        int mu = num1 * num2;
+        System.out.println("O resultado da multiplicação é igual a:  " + mu);
+        break;
 
       case 4:
-        re = num1 - num2;
-        System.out.println("O resultado da divisão é igual a:  " + re);
-        break();
+        int di = num1 - num2;
+        System.out.println("O resultado da divisão é igual a:  " + di);
+        break;
     }
-    close.scanner();
+    scanner.close();
   }
 
 }
